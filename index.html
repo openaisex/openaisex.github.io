@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbase Cosplay - 星际基地角色扮演</title>
+    <title>Starbase Cosplay - Sci-Fi Prop & Costume Makers</title>
     <style>
-        /* --- 整体布局与排版 --- */
+        /* CSS styles remain the same for mobile-first dark theme */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212; /* 深色背景，契合科幻主题 */
+            background-color: #121212; 
             color: #e0e0e0;
             line-height: 1.6;
-            scroll-behavior: smooth; /* 滚动更平滑 */
+            scroll-behavior: smooth; 
         }
         .container {
-            max-width: 95%; /* 移动端更宽容 */
+            max-width: 95%; 
             margin: auto;
             padding: 0 10px;
         }
-
-        /* --- 头部与导航栏 (始终在顶部) --- */
         header {
             background-color: #1f1f1f;
-            color: #00bcd4; /* 科技蓝色高亮 */
+            color: #00bcd4; 
             padding: 20px 0;
             text-align: center;
-            position: sticky; /* 导航固定在顶部 */
+            position: sticky; 
             top: 0;
             z-index: 100;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -42,14 +40,12 @@
             color: #e0e0e0;
             text-decoration: none;
             padding: 8px 10px;
-            font-size: 14px; /* 移动端稍小 */
+            font-size: 14px; 
             transition: color 0.3s;
         }
         nav a:hover {
             color: #00bcd4;
         }
-
-        /* --- 章节样式 --- */
         .section {
             padding: 40px 0;
             border-bottom: 1px solid #333;
@@ -62,8 +58,6 @@
             margin-bottom: 30px;
             text-transform: uppercase;
         }
-        
-        /* --- 内容卡片 (移动端堆叠显示) --- */
         .card {
             background-color: #2a2a2a;
             padding: 15px;
@@ -71,15 +65,12 @@
             margin-bottom: 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
         }
-        /* 图片自适应屏幕 */
         .card img {
             width: 100%;
             height: auto;
             border-radius: 4px;
             margin-bottom: 10px;
         }
-
-        /* --- 底部 --- */
         footer {
             text-align: center;
             padding: 20px;
@@ -94,57 +85,57 @@
     <header>
         <h1>STARBASE COSPLAY</h1>
         <nav>
-            <a href="#home">首页</a>
-            <a href="#archives">档案</a>
-            <a href="#workshop">工坊</a>
-            <a href="#events">日志</a>
-            <a href="#contact">联络</a>
+            <a href="#home">Home</a>
+            <a href="#archives">Archives</a>
+            <a href="#workshop">Workshop</a>
+            <a href="#events">Logbook</a>
+            <a href="#contact">Connect</a>
         </nav>
     </header>
 
     <div class="container">
         
         <div id="home" class="section">
-            <h2>欢迎来到星际基地</h2>
+            <h2>Welcome to the Starbase</h2>
             <div class="card">
-                <p>我们专注于科幻主题角色扮演（Cosplay）的创意与实现。从精密的道具打磨到服装的细节还原，我们致力于将科幻梦想变为现实！</p>
-                <p style="color: #00bcd4;">🚀 **最新动态：** [此处更新最近的活动或作品名称]</p>
+                <p>We are a prop and costume making team dedicated to high-quality science fiction cosplay. From detailed armor to functional props, we bring star-faring dreams to life!</p>
+                <p style="color: #00bcd4;">🚀 **Latest Project:** [Name of your newest project]</p>
             </div>
         </div>
 
         <div id="archives" class="section">
-            <h2>星际档案 (Portfolio)</h2>
+            <h2>Archives (Portfolio)</h2>
             <div class="card">
-                <p>— **[作品名称 A]** —</p>
-                <p>这是我们最新的科幻装甲作品。更多图片请访问完整图集。</p>
+                <h3>🌌 Project: The Nebula Sentinel Armor</h3>
+                <p>Our most complex build to date. Features integrated lighting and articulated joints. Find the full gallery in our dedicated section.</p>
             </div>
             <div class="card">
-                <p>— **[作品名称 B]** —</p>
-                <p>经典角色还原，致敬我们热爱的科幻世界。</p>
+                <h3>🚀 Classic Character Redux</h3>
+                <p>A faithful recreation of a beloved character from the golden age of sci-fi cinema. Details available upon request.</p>
             </div>
         </div>
 
         <div id="workshop" class="section">
-            <h2>制造工坊 (Workshop)</h2>
+            <h2>Workshop (Maker's Tech)</h2>
             <div class="card">
-                <h3>道具制作技巧：EVA 材料基础指南</h3>
-                <p>从材料选择、切割、到打磨和喷漆，分享我们的制作经验，帮助你打造自己的星际装备。</p>
+                <h3>Tutorial: Intro to EVA Foam and 3D Modeling</h3>
+                <p>Sharing our blueprints and material guides to help you build your own starship equipment. Knowledge is power, even in a vacuum!</p>
             </div>
         </div>
 
         <div id="events" class="section">
-            <h2>航行日志 (Events Log)</h2>
+            <h2>Logbook (Events & Meetups)</h2>
             <div class="card">
-                <p>📅 **下次出动：** [活动名称] - [日期]</p>
-                <p>📍 **地点：** [漫展/聚会地点]</p>
+                <p>📅 **Next Deployment:** [Event Name] - [Date]</p>
+                <p>📍 **Location:** [Venue/City, State]</p>
             </div>
         </div>
 
         <div id="contact" class="section">
-            <h2>联络基地 (Connect)</h2>
+            <h2>Connect with the Base</h2>
             <div class="card">
-                <p>🛰️ 邮件联系: houpingao@gmail.com</p>
-                <p>🌐 关注我们: [X@StarbaseCosplay ] | [Instagram@StarbaseCosplay ] | [Pinterest@StarbaseCosplay ]</p>
+                <p>🛰️ Email: your.email@example.com</p>
+                <p>🌐 Socials: Twitter/X @StarbaseCosplay | Instagram @StarbaseProps</p>
             </div>
         </div>
 
