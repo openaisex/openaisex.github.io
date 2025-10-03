@@ -5,71 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbase Cosplay - 星际基地角色扮演</title>
     <style>
-        /* CSS 样式：优化移动端显示 */
+        /* --- 整体布局与排版 --- */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #121212; /* 深色背景，契合科幻主题 */
+            color: #e0e0e0;
             line-height: 1.6;
+            scroll-behavior: smooth; /* 滚动更平滑 */
         }
+        .container {
+            max-width: 95%; /* 移动端更宽容 */
+            margin: auto;
+            padding: 0 10px;
+        }
+
+        /* --- 头部与导航栏 (始终在顶部) --- */
         header {
-            background-color: #2c3e50; /* 深蓝色/太空主题 */
-            color: #ecf0f1;
-            padding: 15px 20px;
+            background-color: #1f1f1f;
+            color: #00bcd4; /* 科技蓝色高亮 */
+            padding: 20px 0;
             text-align: center;
+            position: sticky; /* 导航固定在顶部 */
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         }
         nav {
             display: flex;
             justify-content: space-around;
-            background-color: #34495e;
             padding: 10px 0;
+            border-top: 1px solid #333;
         }
         nav a {
-            color: #ecf0f1;
+            color: #e0e0e0;
             text-decoration: none;
-            padding: 5px 10px;
-            font-size: 16px;
+            padding: 8px 10px;
+            font-size: 14px; /* 移动端稍小 */
+            transition: color 0.3s;
         }
         nav a:hover {
-            background-color: #2980b9; /* 悬停效果 */
-            border-radius: 4px;
+            color: #00bcd4;
         }
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
+
+        /* --- 章节样式 --- */
         .section {
-            background-color: #ffffff;
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 40px 0;
+            border-bottom: 1px solid #333;
+        }
+        h1 { font-size: 30px; margin: 0; }
+        h2 { 
+            font-size: 24px; 
+            color: #00bcd4; 
+            text-align: center; 
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        
+        /* --- 内容卡片 (移动端堆叠显示) --- */
+        .card {
+            background-color: #2a2a2a;
+            padding: 15px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
         }
-        h1 {
-            font-size: 24px;
-            margin-bottom: 5px;
-        }
-        h2 {
-            color: #2980b9; /* 蓝色高亮 */
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 5px;
-        }
-        /* 移动端优化：确保图片宽度自适应 */
-        .gallery-item img {
+        /* 图片自适应屏幕 */
+        .card img {
             width: 100%;
             height: auto;
             border-radius: 4px;
+            margin-bottom: 10px;
         }
-        /* 底部 */
+
+        /* --- 底部 --- */
         footer {
             text-align: center;
-            padding: 15px;
-            background-color: #34495e;
-            color: #ecf0f1;
-            font-size: 14px;
+            padding: 20px;
+            background-color: #1f1f1f;
+            font-size: 12px;
+            color: #999;
         }
     </style>
 </head>
@@ -77,49 +93,65 @@
 
     <header>
         <h1>STARBASE COSPLAY</h1>
-        <p>探索未来，角色扮演的星际基地</p>
+        <nav>
+            <a href="#home">首页</a>
+            <a href="#archives">档案</a>
+            <a href="#workshop">工坊</a>
+            <a href="#events">日志</a>
+            <a href="#contact">联络</a>
+        </nav>
     </header>
-
-    <nav>
-        <a href="#home">首页</a>
-        <a href="#gallery">作品集</a>
-        <a href="#workshop">工坊</a>
-        <a href="#events">活动</a>
-        <a href="#contact">联系</a>
-    </nav>
 
     <div class="container">
         
         <div id="home" class="section">
-            <h2>欢迎加入星际探索之旅</h2>
-            <p>这里是专注于科幻主题角色扮演的创意空间。我们分享服装制作、道具打磨、以及最新的漫展和主题聚会信息。穿梭星辰，扮演你心中的英雄！</p>
-            <p>🌟 **最新作品：** [插入最新作品图片或链接]</p>
+            <h2>欢迎来到星际基地</h2>
+            <div class="card">
+                <p>我们专注于科幻主题角色扮演（Cosplay）的创意与实现。从精密的道具打磨到服装的细节还原，我们致力于将科幻梦想变为现实！</p>
+                <p style="color: #00bcd4;">🚀 **最新动态：** [此处更新最近的活动或作品名称]</p>
+            </div>
         </div>
 
-        <div id="gallery" class="section">
-            <h2>🛸 作品集精选 (Gallery)</h2>
-            <div class="gallery-item">
-                <p>— [Cosplay 图片占位符，请替换为您的图片] —</p>
-                </div>
-            <p style="text-align: center;"><a href="#" style="color: #2980b9;">查看更多精彩作品 &raquo;</a></p>
+        <div id="archives" class="section">
+            <h2>星际档案 (Portfolio)</h2>
+            <div class="card">
+                <p>— **[作品名称 A]** —</p>
+                <p>这是我们最新的科幻装甲作品。更多图片请访问完整图集。</p>
+            </div>
+            <div class="card">
+                <p>— **[作品名称 B]** —</p>
+                <p>经典角色还原，致敬我们热爱的科幻世界。</p>
+            </div>
+        </div>
+
+        <div id="workshop" class="section">
+            <h2>制造工坊 (Workshop)</h2>
+            <div class="card">
+                <h3>道具制作技巧：EVA 材料基础指南</h3>
+                <p>从材料选择、切割、到打磨和喷漆，分享我们的制作经验，帮助你打造自己的星际装备。</p>
+            </div>
         </div>
 
         <div id="events" class="section">
-            <h2>📅 星港活动 (Events)</h2>
-            <p>我们将在 XXX 漫展的 [具体日期] 亮相，欢迎前来合影！</p>
+            <h2>航行日志 (Events Log)</h2>
+            <div class="card">
+                <p>📅 **下次出动：** [活动名称] - [日期]</p>
+                <p>📍 **地点：** [漫展/聚会地点]</p>
+            </div>
         </div>
 
         <div id="contact" class="section">
-            <h2>📧 联系我们 (Connect)</h2>
-            <p>Email: your.email@example.com</p>
-            <p>社交媒体: [您的微博/Twitter/Instagram 链接]</p>
+            <h2>联络基地 (Connect)</h2>
+            <div class="card">
+                <p>🛰️ 邮件联系: your.email@example.com</p>
+                <p>🌐 关注我们: [微博] | [Instagram] | [B站]</p>
+            </div>
         </div>
 
     </div>
 
     <footer>
-        &copy; 2025 Starbase Cosplay. All rights reserved. | 
-        <a href="https://starbasecosplay.com" style="color: #ecf0f1;">返回主页</a>
+        &copy; 2025 Starbase Cosplay. All rights reserved.
     </footer>
 
 </body>
